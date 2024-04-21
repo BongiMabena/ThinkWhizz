@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThinkWhizz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="QuizApp.css" />
+</head>
+<body>
+<div id="timer" class="timer">Time Left: 15s</div>
+<div class="container">
+    <h1>ThinkWhizz</h1>
+    <label for="topic">Select a topic:</label>
+    <select id="topic">
+        <option value="programming">Principles of Programming</option>
+        <option value="fundamentals">Computing Fundamentals</option>
+        <option value="mathematics">Computational Mathematics</option>
+    </select>
+    <button id="start">Start Quiz</button>
+    <div id="quiz" style="display: none">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Submit</button>
+        <div id="score"></div>
+    </div>
+</div>
+<script src="QuizApp.js"></script>
+<footer>
+    <p>By Mbongeni Mabena 2024</p>
+</footer>
+</body>
+</html>
